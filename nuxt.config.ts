@@ -42,7 +42,7 @@ export default defineNuxtConfig({
       globPatterns: ['**/*.{js,css,html,png,ico,svg,woff2}'],
       runtimeCaching: [
         {
-          urlPattern: /^https:\/\/api\./.test(location.origin),
+          urlPattern: /^https:\/\/api\./,
           handler: 'NetworkFirst',
           options: {
             cacheName: 'api-cache',
